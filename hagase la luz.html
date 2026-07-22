@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diversiones Jonbran | Maquinas de videojuegos y entretenimiento</title>
+  <meta name="description" content="Diversiones Jonbran vende maquinas de videojuegos, tableros, simuladores, futbolitos, montables, mesas de billar y brincolines. En el mercado desde 2004.">
+  <meta name="keywords" content="Diversiones Jonbran, maquinas de videojuegos, tableros arcade, simuladores, futbolitos, mesas de billar, brincolines">
+  <meta property="og:title" content="Diversiones Jonbran | Maquinas de videojuegos">
+  <meta property="og:description" content="Venta de maquinas de videojuegos y entretenimiento electromecanico desde 2004.">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-stage">
+      <div class="loader-orbit orbit-one"></div>
+      <div class="loader-orbit orbit-two"></div>
+      <div class="loader-product">
+        <img src="assets/img/video-rockola-02.jpg" alt="">
+      </div>
+      <div class="loader-mark">
+        <span class="mark-top">Diversiones</span>
+        <span class="mark-main">Jonbran</span>
+      </div>
+    </div>
+    <div class="loader-status">
+      <span class="loader-chip">Sistema arcade</span>
+      <span class="loader-text">Cargando experiencia...</span>
+    </div>
+    <div class="loader-spinner"></div>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+  </div>
+
+  <!-- NAVBAR -->
+  <header id="navbar" role="banner">
+    <div class="container">
+      <div class="nav-inner">
+
+        <a href="#hero" class="nav-logo" aria-label="Diversiones Jonbran - inicio">
+          <div class="nav-logo-icon" aria-hidden="true">
+            <i class="fa-solid fa-gamepad"></i>
+          </div>
+          <div class="nav-logo-copy">
+            <span>Diversiones</span>
+            <span>Jonbran</span>
+          </div>
+        </a>
+
+        <nav aria-label="Navegacion principal">
+          <ul class="nav-links">
+            <li><a href="#why">Ventajas</a></li>
+            <li><a href="#ambientes">Productos</a></li>
+            <li><a href="#proceso">Proceso</a></li>
+            <li><a href="#sectores">Galeria</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <a href="https://wa.me/523311833586?text=Hola%2C%20quiero%20cotizar%20maquinas%20de%20videojuegos%20con%20Diversiones%20Jonbran."
+           target="_blank" rel="noopener noreferrer" class="btn-gold nav-cta">
+          <i class="fa-brands fa-whatsapp"></i>
+          WhatsApp
+        </a>
+
+        <button class="hamburger" id="hamburger"
+                aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mob-menu" aria-label="Menu movil">
+      <a href="#why">Ventajas</a>
+      <a href="#ambientes">Productos</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#sectores">Galeria</a>
+      <a href="#contacto">Contacto</a>
+      <a href="https://wa.me/523311833586?text=Hola%2C%20quiero%20cotizar%20maquinas%20de%20videojuegos%20con%20Diversiones%20Jonbran."
+         target="_blank" rel="noopener noreferrer">Cotizar por WhatsApp</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section id="hero" aria-labelledby="hero-heading">
+
+      <!-- Parallax background image (fixed) -->
+      <div class="hero-bg" aria-hidden="true"></div>
+      <!-- Dark overlays -->
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-vignette" aria-hidden="true"></div>
+      <!-- Grid texture -->
+      <div class="hero-grid" aria-hidden="true"></div>
+      <!-- Canvas particle orbs -->
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+      <!-- Light shafts -->
+      <div class="hero-rays" aria-hidden="true">
+        <div class="hero-ray r1"></div>
+        <div class="hero-ray r2"></div>
+        <div class="hero-ray r3"></div>
+        <div class="hero-ray r4"></div>
+        <div class="hero-ray r5"></div>
+      </div>
+      <!-- Film grain overlay -->
+      <div class="hero-grain" aria-hidden="true"></div>
+      <!-- One-shot scan reveal -->
+      <div class="hero-scanline" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero-content">
+
+          <!-- Live badge -->
+          <div class="hero-badge" id="hero-badge" aria-hidden="true">
+            <div class="badge-dot"></div>
+            Venta de maquinas de videojuegos desde 2004
+          </div>
+
+          <!-- Animated title -->
+          <h1 class="hero-title" id="hero-heading">
+            <span class="line"><span>Lleva el juego</span></span>
+            <span class="line"><span>a tu negocio</span></span>
+            <span class="line"><em id="typed-word" class="accent">con maquinas reales.</em></span>
+          </h1>
+
+          <!-- Subtitle -->
+          <p class="hero-sub" id="hero-sub">
+            Maquinas de videojuegos, tableros y equipo arcade para negocios que buscan sumar atraccion y diversion.
+          </p>
+
+          <!-- CTAs -->
+          <div class="hero-ctas" id="hero-ctas">
+            <a href="https://wa.me/523311833586?text=Hola%2C%20quiero%20solicitar%20una%20cotizacion%20de%20maquinas%20de%20videojuegos."
+               target="_blank" rel="noopener noreferrer" class="btn-gold">
+              Solicitar cotizacion
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#ambientes" class="btn-outline">
+              <i class="fa-solid fa-layer-group"></i>
+              Ver productos
+            </a>
+          </div>
+
+          <!-- Trust bar -->
+          <div class="hero-trust" id="hero-trust" aria-label="Credenciales">
+            <div class="trust-item">
+              <i class="fa-solid fa-trophy"></i>
+              Desde 2004
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-solid fa-microchip"></i>
+              Maquinas y tableros
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-brands fa-whatsapp"></i>
+              33 1183 3586
+            </div>
+          </div>
+
+        </div><!-- /.hero-content -->
+      </div>
+
+      <!-- Scroll cue -->
+      <div class="scroll-cue" aria-hidden="true">
+        <div class="scroll-mouse">
+          <div class="scroll-mouse-dot"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-inner" id="marquee"></div>
+    </div>
+
+    <!-- WHY - Features -->
+    <section id="why" aria-labelledby="why-heading">
+      <div class="particle-field" aria-hidden="true"></div>
+      <div class="container">
+
+        <div class="why-header">
+          <div class="reveal">
+            <div class="label">Por que elegirnos</div>
+            <h2 class="why-quote" id="why-heading">
+              El equipo correcto no solo ocupa un espacio:
+              <em>lo vuelve un punto de atraccion.</em>
+            </h2>
+          </div>
+          <p class="why-sub reveal d2">
+            El catalogo de Diversiones Jonbran esta pensado para negocios que buscan entretenimiento visible y con presencia: maquinas arcade, simuladores y opciones electromecanicas listas para destacar.
+          </p>
+        </div>
+
+        <div class="features-grid">
+
+          <div class="f-card reveal">
+            <div class="f-num" aria-hidden="true">01</div>
+            <h3>Trayectoria desde 2004</h3>
+            <p>Una operacion enfocada en maquinas de videojuegos y entretenimiento electromecanico con presencia sostenida en el mercado.</p>
+          </div>
+
+          <div class="f-card reveal d1">
+            <div class="f-num" aria-hidden="true">02</div>
+            <h3>Linea principal especializada</h3>
+            <p>Maquinas de videojuegos y tableros como eje del negocio, con opciones pensadas para distintos formatos de entretenimiento.</p>
+          </div>
+
+          <div class="f-card reveal d2">
+            <div class="f-num" aria-hidden="true">03</div>
+            <h3>Catalogo versatil</h3>
+            <p>Simuladores, futbolitos, montables, mesas de billar y brincolines para armar propuestas atractivas segun el espacio.</p>
+          </div>
+
+          <div class="f-card reveal d3">
+            <div class="f-num" aria-hidden="true">04</div>
+            <h3>Atencion directa</h3>
+            <p>La cotizacion se inicia por WhatsApp para revisar necesidades, linea de producto y detalles del equipo de interes.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- AMBIENTES - Productos -->
+    <section id="ambientes" aria-labelledby="amb-heading">
+      <div class="section-fixed-bg catalog-bg" aria-hidden="true"></div>
+      <div class="container">
+
+        <div class="ambientes-top">
+          <div class="reveal">
+            <div class="label">Productos y servicios</div>
+            <h2 class="section-title" id="amb-heading">
+              Maquinas con presencia<br>
+              <span class="gold">para activar la diversion</span>
+            </h2>
+            <p>
+              Fotografias reales del equipo disponible en el proyecto, organizadas para mostrar con claridad las lineas principales del negocio.
+            </p>
+          </div>
+          <div class="reveal d2">
+            <span class="ambiente-pill">Catalogo Jonbran</span>
+          </div>
+        </div>
+
+        <div class="ambientes-grid product-grid">
+
+          <article class="amb-card product-card reveal">
+            <img class="amb-img" src="assets/img/video-rockola-03.jpg" alt="Maquina Video Rockola naranja con luces LED ambar">
+            <div class="amb-overlay">
+              <h3>Videojuegos y tableros</h3>
+              <p>Linea principal del negocio: gabinetes arcade, Video Rockola y tableros para experiencias de juego.</p>
+              <div class="amb-temp">Linea principal</div>
+            </div>
+          </article>
+
+          <article class="amb-card product-card reveal d1">
+            <img class="amb-img" src="assets/img/arcade-multijuego-fifa-wwe.jpg" alt="Gabinetes arcade multijuego FIFA y WWE">
+            <div class="amb-overlay">
+              <h3>Importados y simuladores</h3>
+              <p>Maquinas importadas y simuladores para sumar variedad, dinamica y mayor impacto al punto de entretenimiento.</p>
+              <div class="amb-temp">Experiencias activas</div>
+            </div>
+          </article>
+
+          <article class="amb-card product-card reveal d2">
+            <img class="amb-img" src="assets/img/menu-juegos.jpg" alt="Pantalla de seleccion de juegos en tablero arcade">
+            <div class="amb-overlay">
+              <h3>Futbolitos y billar</h3>
+              <p>Opciones clasicas de convivencia para complementar areas recreativas y ampliar el tiempo de permanencia.</p>
+              <div class="amb-temp">Complementos</div>
+            </div>
+          </article>
+
+          <article class="amb-card product-card reveal">
+            <img class="amb-img" src="assets/img/mortal-kombat.jpg" alt="Gabinete arcade Mortal Kombat 11">
+            <div class="amb-overlay">
+              <h3>Montables y brincolines</h3>
+              <p>Equipos de entretenimiento electromecanico y recreativo para espacios con publico familiar.</p>
+              <div class="amb-temp">Linea recreativa</div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESO - How we work -->
+    <section id="proceso" aria-labelledby="proceso-heading">
+      <div class="container">
+
+        <div class="proceso-header reveal">
+          <div class="label">Como funciona</div>
+          <h2 class="section-title" id="proceso-heading">
+            Comprar o cotizar debe sentirse <span class="gold">simple</span>
+          </h2>
+          <p>Un proceso directo para entender lo que necesitas y avanzar por WhatsApp con la informacion correcta.</p>
+        </div>
+
+        <div class="proceso-grid">
+
+          <div class="proceso-step reveal">
+            <div class="step-number">Paso 01</div>
+            <h3>Comparte tu idea</h3>
+            <p>Escribe por WhatsApp y cuenta que tipo de maquina, tablero o linea de entretenimiento estas buscando.</p>
+          </div>
+
+          <div class="proceso-step reveal d1">
+            <div class="step-number">Paso 02</div>
+            <h3>Revisa opciones</h3>
+            <p>Se valida la linea de producto adecuada: videojuegos, importados, simuladores, futbolitos, billar, montables o brincolines.</p>
+          </div>
+
+          <div class="proceso-step reveal d2">
+            <div class="step-number">Paso 03</div>
+            <h3>Solicita cotizacion</h3>
+            <p>Con los datos claros, el contacto continua por WhatsApp para definir la cotizacion y siguientes pasos.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTO ESTRELLA -->
+    <section id="producto" aria-labelledby="prod-heading">
+      <div class="particle-field blue" aria-hidden="true"></div>
+      <div class="container">
+        <div class="producto-wrap">
+
+          <!-- Info -->
+          <div class="reveal">
+            <div class="label">Producto insignia</div>
+            <h2 class="section-title" id="prod-heading">
+              Video Rockola:<br>
+              <span class="gold">luz, pantalla y presencia</span>
+            </h2>
+            <p class="producto-lead">
+              El gabinete naranja con brillo ambar marca la identidad visual de Diversiones Jonbran: una maquina que se ve desde lejos y comunica entretenimiento de inmediato.
+            </p>
+
+            <ul class="feature-rows" aria-label="Caracteristicas de la linea Video Rockola">
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-lightbulb"></i></div>
+                <div>
+                  <h4>Iluminacion ambar</h4>
+                  <p>El brillo del gabinete genera un punto focal claro en espacios oscuros o de alto movimiento.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-tv"></i></div>
+                <div>
+                  <h4>Pantalla visible</h4>
+                  <p>La zona frontal muestra contenido y menus de forma directa para facilitar la interaccion.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-gamepad"></i></div>
+                <div>
+                  <h4>Experiencia arcade</h4>
+                  <p>Formato fisico con controles, gabinete y presencia de maquina real, no una imagen generica.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></div>
+                <div>
+                  <h4>Cotizacion directa</h4>
+                  <p>El primer contacto se realiza por WhatsApp para revisar el producto de interes y los detalles de cotizacion.</p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="specs-bar" role="list" aria-label="Datos clave de Diversiones Jonbran">
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">2004</span>
+                <span class="spec-name">En mercado</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">7</span>
+                <span class="spec-name">Lineas</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">WA</span>
+                <span class="spec-name">Contacto</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">Real</span>
+                <span class="spec-name">Producto</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Visual -->
+          <div class="reveal d2">
+            <div class="panel-scene">
+              <img class="featured-product-img" src="assets/img/video-rockola-02.jpg" alt="Maquina Video Rockola naranja de Diversiones Jonbran">
+              <div class="p-badge pb-tl" aria-hidden="true">
+                <div class="p-badge-dot"></div>
+                Gabinete Video Rockola
+              </div>
+              <div class="p-badge pb-br" aria-hidden="true">
+                <i class="fa-solid fa-bolt"></i>
+                Naranja + ambar neon
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section id="stats" aria-label="Estadisticas clave">
+      <div class="container">
+        <div class="stats-grid reveal" role="list">
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num"
+                 data-count="20" data-suffix="+"
+                 aria-label="Mas de 20 anos">0</div>
+            <div class="stat-lbl">Anos en<br>el mercado</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num"
+                 data-count="7" data-suffix=""
+                 aria-label="7 lineas de producto">0</div>
+            <div class="stat-lbl">Lineas de<br>entretenimiento</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num"
+                 data-count="2004" data-suffix=""
+                 aria-label="Desde 2004">0</div>
+            <div class="stat-lbl">Presencia<br>desde</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTORES - Galeria -->
+    <section id="sectores" aria-labelledby="sec-heading">
+      <div class="container">
+
+        <div class="sectores-hdr reveal">
+          <div class="label">Galeria real</div>
+          <h2 class="section-title" id="sec-heading">
+            Fotografias de producto <span class="gold">sin simulaciones</span>
+          </h2>
+          <p>Imagenes reales disponibles en el proyecto, seleccionadas para mostrar gabinetes, pantallas y equipos de entretenimiento.</p>
+        </div>
+
+        <div class="sectores-grid gallery-grid" role="list">
+          <article class="sector-card gallery-card reveal" role="listitem">
+            <img src="assets/img/video-rockola-01.jpg" alt="Video Rockola naranja iluminada">
+            <h3>Video Rockola iluminada</h3>
+            <p>Gabinete naranja con pantalla central y luz ambar frontal.</p>
+          </article>
+          <article class="sector-card gallery-card reveal d1" role="listitem">
+            <img src="assets/img/arcade-multijuego-linea.jpg" alt="Linea de gabinetes arcade multijuego">
+            <h3>Linea multijuego</h3>
+            <p>Gabinetes en exhibicion con controles arcade y pantallas activas.</p>
+          </article>
+          <article class="sector-card gallery-card reveal d2" role="listitem">
+            <img src="assets/img/arcade-kof-gta.jpg" alt="Gabinetes King of Fighters y GTA">
+            <h3>King of Fighters / GTA</h3>
+            <p>Equipos tematicos para espacios con alta visibilidad.</p>
+          </article>
+          <article class="sector-card gallery-card reveal d3" role="listitem">
+            <img src="assets/img/street-fighter-capcom.jpg" alt="Gabinete Street Fighter II Capcom">
+            <h3>Street Fighter II</h3>
+            <p>Gabinete Capcom con pantalla y botones arcade clasicos.</p>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" aria-labelledby="contact-heading">
+      <div class="section-fixed-bg contact-bg" aria-hidden="true"></div>
+      <div class="container">
+
+        <div class="contact-hdr reveal">
+          <div class="label">Contacto</div>
+          <h2 class="section-title" id="contact-heading">
+            Cotiza por <span class="gold">WhatsApp</span>
+          </h2>
+          <p>Completa el formulario y se abrira un mensaje de WhatsApp listo para enviar con los datos de tu cotizacion.</p>
+        </div>
+
+        <div class="contact-box reveal">
+
+          <!-- Info panel -->
+          <div class="contact-info">
+            <h3>Atencion directa</h3>
+            <p class="ci-sub">Cuéntanos que maquina o linea de entretenimiento necesitas y continuamos la cotizacion por WhatsApp.</p>
+
+            <ul class="ci-list">
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>WhatsApp</h4>
+                  <p><a href="tel:+523311833586">33 1183 3586</a></p>
+                  <a href="https://wa.me/523311833586?text=Hola%2C%20quiero%20cotizar%20con%20Diversiones%20Jonbran."
+                     target="_blank" rel="noopener noreferrer" class="ci-wa-link">
+                    Abrir chat
+                  </a>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-boxes-stacked"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Lineas disponibles</h4>
+                  <p>Videojuegos, tableros, importados, simuladores, futbolitos, montables, billar y brincolines.</p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-circle-info"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Datos del proyecto</h4>
+                  <p>Comparte el producto de interes, cantidad aproximada y cualquier detalle relevante del espacio.</p>
+                </div>
+              </li>
+            </ul>
+          </div><!-- /.contact-info -->
+
+          <!-- Form -->
+          <div class="contact-form-wrap">
+            <h3>Solicitar cotizacion</h3>
+            <form id="wa-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="f-name">Nombre completo</label>
+                  <input type="text" id="f-name" class="form-control"
+                         placeholder="Ej. Nombre Apellido" required autocomplete="name">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="f-interest">Que necesitas</label>
+                  <select id="f-interest" class="form-control">
+                    <option>Maquinas de videojuegos y tableros</option>
+                    <option>Maquinas y simuladores importados</option>
+                    <option>Simuladores</option>
+                    <option>Futbolitos</option>
+                    <option>Montables</option>
+                    <option>Mesas de billar</option>
+                    <option>Brincolines</option>
+                    <option>Cotizacion general</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="f-msg">Detalle</label>
+                <textarea id="f-msg" class="form-control" rows="4" required
+                          placeholder="Describe cantidad, tipo de equipo o cualquier detalle que ayude a cotizar."></textarea>
+              </div>
+              <button type="submit" class="form-submit">
+                <i class="fa-brands fa-whatsapp"></i>
+                Enviar a WhatsApp
+              </button>
+              <p class="form-note">
+                Al enviar, se abrira WhatsApp con el mensaje escrito. El formulario no envia correos.
+              </p>
+            </form>
+          </div>
+
+        </div><!-- /.contact-box -->
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="#hero" class="footer-logo" aria-label="Diversiones Jonbran - inicio">
+            <i class="fa-solid fa-gamepad"></i>
+            <span>Diversiones Jonbran</span>
+          </a>
+          <p>Maquinas de videojuegos y entretenimiento electromecanico para negocios que quieren activar la diversion.</p>
+        </div>
+        <div class="footer-links" aria-label="Enlaces del sitio">
+          <div>
+            <h4>Explorar</h4>
+            <a href="#why">Ventajas</a>
+            <a href="#ambientes">Productos</a>
+            <a href="#proceso">Proceso</a>
+          </div>
+          <div>
+            <h4>Contacto</h4>
+            <a href="#sectores">Galeria</a>
+            <a href="#contacto">Cotizar</a>
+            <a href="https://wa.me/523311833586?text=Hola%2C%20quiero%20informacion%20sobre%20Diversiones%20Jonbran."
+               target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          </div>
+        </div>
+        <div class="footer-socials">
+          <a href="https://wa.me/523311833586?text=Hola%2C%20quiero%20informacion%20sobre%20Diversiones%20Jonbran."
+             target="_blank" rel="noopener noreferrer" class="footer-soc" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+      <p class="footer-copy">
+        &copy; <span id="year"></span> Diversiones Jonbran. Todos los derechos reservados.
+      </p>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/523311833586?text=Hola%2C%20visite%20su%20sitio%20web%20y%20quiero%20cotizar%20maquinas%20de%20videojuegos."
+     target="_blank" rel="noopener noreferrer"
+     class="wa-btn" aria-label="Contactar por WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/main.js?v=2" defer></script>
+</body>
+</html>
